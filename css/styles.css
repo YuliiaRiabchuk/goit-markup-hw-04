@@ -440,6 +440,12 @@ p {
   /* width: 370px; */
 }
 
+.cards-item-portfolio:hover,
+.cards-item-portfolio:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .group-bottom-cards {
   padding-left: 24px;
   padding-top: 20px;
@@ -467,7 +473,6 @@ p {
 /* Footer */
 
 .footer {
-  display: flex;
   background-color: var(--black-bgd-cl);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -518,7 +523,7 @@ p {
 /* Socials */
 
 .social-links {
-  margin-top: 72px;
+  /* margin-top: 72px; */
   margin-left: 70px;
 }
 
