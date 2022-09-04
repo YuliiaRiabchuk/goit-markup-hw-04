@@ -14,6 +14,9 @@
   --black-bgd-cl: #2f303a;
   --gray-bgd-cl: #f5f4fa;
   --gray-bgd-btn-cl: #f5f4fa;
+  --gray-bgd-icon-cl: #afb1b8;
+  --gray-bgd-icon-footer-cl: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    rgba(255, 255, 255, 0.1);
 
   /* Others */
 
@@ -316,6 +319,85 @@ p {
   margin-bottom: 30px;
 }
 
+/* socials */
+
+.team-wrap {
+  padding-bottom: 30px;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: var(--light-txt-cl);
+}
+
+.social-icon {
+  fill: var(--gray-bgd-icon-cl);
+}
+
+.socials-link:hover .social-icon,
+.socials-link:focus .social-icon {
+  fill: var(--light-txt-cl);
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--accent-bgd-cl);
+}
+
+/* Постійні клієнти */
+.section-title {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--gray-bgd-icon-cl);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+.clients-icon {
+  fill: var(--gray-bgd-icon-cl);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--accent-txt-cl);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-txt-cl);
+}
+
 /* Портфоліо */
 
 .list-btn {
@@ -385,9 +467,14 @@ p {
 /* Footer */
 
 .footer {
+  display: flex;
   background-color: var(--black-bgd-cl);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
 }
 
 .logo-footer {
@@ -426,4 +513,44 @@ p {
 
 .footer-contacts {
   color: var(--gray-txt-cl-60);
+}
+
+/* Socials */
+
+.social-links {
+  margin-top: 72px;
+  margin-left: 70px;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-txt-cl);
+}
+.footer-socials {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-socials-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-socials-icon {
+  fill: var(--light-txt-cl);
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: var(--accent-bgd-cl);
 }
